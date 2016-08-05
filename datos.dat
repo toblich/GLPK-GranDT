@@ -1,0 +1,66 @@
+data;
+
+set Posiciones := ARQ DEF VOL DEL;
+
+set Fechas := 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15;
+
+set Fechas_sin_primera := 2 3 4 5 6 7 8 9 10 11 12 13 14 15;
+
+set Equipos := 	"Aldosivi de MdP"
+				"Argentinos Juniors"
+				"Arsenal FC"
+				"Atlético de Rafaela"
+				"Banfield"
+				"Belgrano de Cba"
+				"Boca Juniors"
+				"Colón de Santa Fe"
+				"Crucero del Norte"
+				"Defensa y Justicia"
+				"Estudiantes LP"
+				"Gimnasia LP"
+				"Godoy Cruz AT"
+				"Huracán"
+				"Independiente"
+				"Lanús"
+				"Newells Old Boys"
+				"Nueva Chicago"
+				"Olimpo de BB"
+				"Quilmes AC"
+				"Racing Club"
+				"River Plate"
+				"Rosario Central"
+				"San Lorenzo de A"
+				"San Martín SJ"
+				"Sarmiento de Junín"
+				"Temperley"
+				"Tigre"
+				"Unión de Santa Fe"
+				"Vélez Sarsfield";
+
+param cant_total_titulares := 11;
+
+param presupuesto := 65000000;
+
+param max_mismo_equipo := 3;
+
+param max_compras := 4;
+
+param min_suplentes_por_posicion := 0;
+
+param max_suplentes_por_posicion := 0;
+
+param cant_total_suplentes := 0;
+
+param cant_min := 	ARQ	1
+					DEF	3
+					VOL	3
+					DEL 2;
+
+
+param cant_max := 	ARQ	1
+					DEF	4
+					VOL	4
+					DEL	3;
+
+end;
+
